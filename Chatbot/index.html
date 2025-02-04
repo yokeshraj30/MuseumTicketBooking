@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museum Ticket Booking System 🎟️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏛️ Museum Ticket Booking 🏛️ System </h1>
+            <select id="language" onchange="changeLanguage()">
+                <option value="en">English</option>
+                <option value="hi">हिन्दी</option>
+            </select>
+        </header>
+        <main>
+            <div id="chat-box" class="chat-box"></div>
+            <div class="input-area">
+                <button id="start-button" onclick="startChat()">Start 🚀</button>
+                <div id="option-buttons" style="display: none;">
+                    <button id="show-slots" onclick="showSlots()"></button>
+                    <button id="show-bus-routes" onclick="showBusRoutes()"></button>
+                </div>
+                <div id="slot-buttons" style="display: none;"></div>
+                <div id="ticket-buttons" style="display: none;"></div>
+                <div id="payment-buttons" style="display: none;">
+                    <button id="confirm-payment" onclick="confirmPayment()"></button>
+                    <button id="cancel-payment" onclick="cancelPayment()">Cancel ❌</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
